@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Header": "/component/Header/Header",
+    "Footer": "/component/Footer/Footer"
+  }
+}

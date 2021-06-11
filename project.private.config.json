@@ -1,0 +1,35 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/midcon1/midcon1",
+          "pathName": "pages/midcon1/midcon1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wallheaven/wallheaven",
+          "pathName": "pages/wallheaven/wallheaven",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

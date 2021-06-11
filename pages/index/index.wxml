@@ -1,0 +1,58 @@
+<!-- 头部 -->
+<Header/>
+
+<!-- 轮播图 swiper-->
+<view>
+  <swiper class="swp" style="width: 750rpx; height: 300rpx" autoplay="{{ true }}" circular="{{ true }}" indicator-dots="{{ true }}" indicator-color="gray" indicator-active-color="white" interval="3000" circular>
+    <swiper-item wx:for="{{swpArr}}" wx:key="index" >
+      <image src='{{item.src}}'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- scroll-view 元素 -->
+<scroll-view class="mid" scroll-x>
+  <view class="midCon">
+    <navigator class="scrollBox" wx:for="{{midCons}}" wx:key="index" url="{{item.nav}}" open-type="{{item.opty}}">
+      <image class="midP" src='{{item.url}}'></image>
+      <view class="midT">{{item.txt}}</view>
+    </navigator>
+  </view>
+</scroll-view>
+
+<!-- bottom  -->
+<view class="bottom">
+  <PubTitle myTitle="Paintings" myUrl="/pages/wallheaven/wallheaven"/>
+
+  <view class="botCons">
+    <view class="botCon" hover-class="clickBotCon" wx:for="{{botConS}}" wx:key="index" data-botConIdx="{{index}}" bindtap='moveClick'>
+      <image class="botConImg" src="{{item.url}}" animation="{{item.moveDataL}}"></image>
+      <view class="ceng" animation="{{item.moveDataR}}">
+        <view>{{item.author}}</view>
+        <view class="botLine"></view>
+        <view class="botPid" wx:if="{{item.isclick}}">Pid: {{item.pid}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- Dynamic  -->
+<view class="dynamic"> 
+  <PubTitle myTitle= "Push News" myUrl="/pages/dynamic/dynamic"/>
+
+  <view class="dyMain">
+    <navigator class="dyItem" wx:for="{{DyContent}}" wx:key="index">
+      <image class="dy" src="{{item.picurl}}"></image>
+      <view class="dyContent">
+        <view class="dyConTil">{{item.title}}</view>
+        <view class="dyConBot">
+          <view class="dyConAut">aut:{{item.author}}</view>
+          <view class="dyConTime">{{item.posttime}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<!-- Footer -->
+<Footer/>

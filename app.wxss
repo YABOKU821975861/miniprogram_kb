@@ -1,0 +1,25 @@
+.container {
+  padding: 0 25rpx;
+  box-sizing: border-box; /*设置之后不会被padding影响元素大小*/
+}
+
+.hdright image {
+  animation: dh 1.5s ;
+  animation: normal;
+}
+
+@keyframes dh{
+  0%,100%{opacity: 1;}
+  50%{opacity: 0;}
+}
+
+@keyframes showup{
+  0%{opacity: 0;}
+  100%{opacity: 0.6;}
+}
+
+@keyframes long {
+  from{width: 60rpx;}
+  to{width: 120rpx;}
+  /* to{width:120rpx;} */
+}

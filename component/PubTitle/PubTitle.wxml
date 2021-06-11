@@ -1,0 +1,5 @@
+<view class="botTitle">
+    <!-- <view id="bk"></view> -->
+    <view class="botTxt" style="letter-spacing: 3rpx">{{myTitle}}</view>
+    <navigator class="botMore" url="{{myUrl}}" open-type="switchTab">更多>></navigator>
+  </view>

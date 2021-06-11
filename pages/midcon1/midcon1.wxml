@@ -1,0 +1,27 @@
+<!-- 头部 -->
+<Header/>
+
+<!-- mid -->
+<view>
+  <image src="/imgs/midconbg.jpg" mode="widthFix" style="width: 750rpx; display: block"></image>
+</view>
+
+<view class="conBox" wx:for="{{4}}">
+  <view class="boxTit">
+    Information
+  </view>
+  <view class="boxInfo">
+    <view class="boxInfoImg"></view>
+    <view class="boxInfoText">
+      <view>Text content Area</view>
+      <view>Text content Area</view>
+      <view>Text content Area</view>
+      <view>Text content Area</view>
+      <view>Text content Area</view>
+      <view>Text content Area</view>
+    </view>
+  </view>
+</view>
+
+<!-- Footer -->
+<Footer/>

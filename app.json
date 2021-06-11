@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wallheaven/wallheaven",
+    "pages/dynamic/dynamic",
+    "pages/midcon1/midcon1",
+    "pages/webview/wb"
+  ],
+  "window": {
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00B6FF",
+    "navigationBarTitleText": "空白杂谈",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "Home",
+        "pagePath": "pages/index/index",
+        "iconPath": "/imgs/home.jpg",
+        "selectedIconPath": "/imgs/home1.png"
+      },
+      {
+        "text": "wallheaven",
+        "pagePath": "pages/wallheaven/wallheaven",
+        "iconPath": "/imgs/home.jpg",
+        "selectedIconPath": "/imgs/home1.png"
+      },
+      {
+        "text": "dynamic",
+        "pagePath": "pages/dynamic/dynamic",
+        "iconPath": "/imgs/home.jpg",
+        "selectedIconPath": "/imgs/home1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

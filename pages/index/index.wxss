@@ -1,0 +1,189 @@
+/*swpier元素*/
+.swp image {
+  width: 100%; 
+  height: 100%; 
+  display: inline-block; 
+  box-sizing: border-box;
+}
+
+/*scroll-view元素*/ 
+.mid .midCon {
+  display: flex;
+  padding: 20rpx 0;
+  flex-wrap: nowrap;
+}
+
+.mid .scrollBox {
+  text-align: center;
+  width: 22%;
+  flex: 0 0 auto;
+  font-size: 26rpx;
+  /* padding: 0 26rpx; */
+}
+
+.mid .midP {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.mid .txt {
+  font-size: 26rpx;
+}
+
+/* Paintings头部 */
+.bottom {
+  /* margin-top: 20rpx; */
+  background: #f0f3f8;
+}
+
+.botTitle {
+  width: 750rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.botTitle .botTxt {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.botTitle .botTxt::after {
+  display: block;
+  width: 8rpx;
+  height: 50rpx;
+  background: gray;
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  opacity: 0.2;
+}
+
+.bottom .botMore {
+  font-size: small;
+  opacity: 0.4;
+  position: absolute;
+  text-align: right;
+  right: 26rpx;
+}
+
+/* Paintings内容 */
+.botCons {
+  width:100%; 
+  /* padding:20rpx auto;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.botCon{
+  margin: 20rpx auto;
+  width: 600rpx;
+  height: 200rpx;
+  text-align: center;
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+.botConImg {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 300rpx;
+  height: 200rpx;
+}
+
+.botCon .ceng {
+  position: absolute;
+  width: 300rpx;
+  height: 200rpx;
+  text-align: center;
+  top: 0;
+  left: 25%;
+  background: rgba(0, 0, 0, 0.5);
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.ceng .botLine {
+  width: 120rpx;
+  height: 2rpx;
+  margin: 10rpx auto;
+  /* animation: long 2s infinite; */
+  background: #fff;
+}
+
+.ceng .botPid {
+  opacity: 0.6;
+  font-size: 20rpx;
+  animation: showup 2s;
+}
+
+/* Dynamic */
+
+.dyMain .dyItem {
+  display: flex;
+  justify-content: center;
+  /* left: 26rpx; */
+  margin: 20rpx ;
+  box-sizing: border-box;
+}
+
+.dyMain .dy {
+  width:300rpx; 
+  height:200rpx; 
+  /* background: rgba(0, 0, 0, 0.5); */
+  text-align: center;
+  position: relative;
+}
+
+/* .dyMain .dy::before {
+  content: 'IMG';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+} */
+
+.dyContent .dyConTil {
+  font-size: 30rpx;
+  white-space:nowrap; 
+  width:13em; 
+  overflow:hidden; 
+  text-overflow: ellipsis;
+}
+.dyMain .dyContent {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding:10rpx 22rpx;
+  box-sizing: border-box;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+
+.dyMain .dyConBot{
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350rpx;
+}
+
+.dyConAut {
+  font-size: 25rpx;
+}
+.dyConTime {
+  font-size: 25rpx;
+  opacity: 0.5;
+} 

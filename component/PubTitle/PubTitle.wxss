@@ -1,0 +1,34 @@
+.botTitle {
+  width: 750rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.botTitle .botTxt {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.botTitle .botTxt::after {
+  display: block;
+  width: 8rpx;
+  height: 50rpx;
+  background: gray;
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  opacity: 0.2;
+}
+
+.botTitle .botMore {
+  font-size: small;
+  opacity: 0.4;
+  position: absolute;
+  text-align: right;
+  right: 26rpx;
+}

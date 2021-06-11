@@ -1,0 +1,5 @@
+/* pages/webview/wb.wxss */
+.page-body {
+  padding: 0 26rpx;
+  box-sizing: border-box;
+}

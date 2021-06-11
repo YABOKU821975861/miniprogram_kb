@@ -1,0 +1,89 @@
+<Header />
+
+<!-- scroll-view 元素 -->
+<scroll-view class="mid" scroll-x>
+  <view class="midCon">
+    <view
+      class="scrollBox" 
+      wx:for="{{category}}" 
+      wx:key="category">
+        <view
+          class="{{index==idx?'_pink':'pink'}}" 
+          bindtap="poup" 
+          data-index='{{index}}' 
+          data-categoryitem='{{item}}'
+          data-categorypage='{{item.page}}'>
+          {{item.name}}
+        </view>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- <view class="midLine"></view> -->
+
+<!-- 主体 -->
+<view class="screen screen1">
+  <scroll-view
+   style="height:100%;"
+   scroll-y
+   scroll-top="{{scrollTop}}"
+   enable-back-to-top="true"
+   enhanced="true"
+   bounces
+   show-scrollbar
+   fast-deceleration="true"
+   >
+    <view class="contact" >
+        <!-- <button bindtap="nxpage">next page</button> -->
+        <block  wx:for="{{whData}}" wx:key="index">
+          <share-element
+            key="idxImg" 
+            duration="300" 
+            transform="{{index === imgIdx}}" 
+            bindtap="popupPC" 
+            data-idx="{{index}}" 
+            data-showitem="{{item}}">
+              <image src="{{item.thumbs.small}}"  mode="aspectFit" class="midImg" lazy-load="true" wx:if="{{over}}"></image>
+          </share-element>
+        </block>
+        <view class="flxBtn">
+          <button bindtap="repage" class="btn btn2" wx:if="{{over}}">back</button>
+          <button bindtap="nxpage" class="btn btn1" wx:if="{{over}}">next</button>
+        </view>
+        <view class="Rm" wx:if="{{RM}}" hover-start-time>Read More...</view>
+        <Footer style="width:100%" wx:if="{{over}}"/>
+    </view>
+  </scroll-view>
+</view>
+
+
+<page-container
+  show="{{show}}"
+  round="true"
+  overlay="true"
+  position='center'
+  >   
+      <view class="screen screen2">
+        <scroll-view scroll-y style="height:100%">
+          <view class="contact">
+            <share-element key="idxImg" duration="300" transform>
+              <image src="{{showImg}}"
+                class="midImg" 
+                style="width:{{iWidth}}px;height:{{iHeight}}px;"
+                bindtap="preView"
+                wx:if="{{showImg}}"></image>
+            </share-element>
+            <view class="text {{show ? 'enter' : ''}}">
+              <view>Original Resolution: <text class="txt">{{imgResolution}}</text></view>
+              <navigator open-type="redirectTo" url="/pages/webview/wb?path={{imgPath}}">Original Url: <text class="txt">{{imgPath}}</text></navigator>
+              <text>\n</text>
+              <!-- <view>download Original img</view> -->
+            </view>
+            <view class="flxBtn">
+              <button bindtap="preView" class="btn btn2">{{showItem.thumbs.small==showImg ? 'ShowOri' : 'ShowSma'}}</button>
+              <button class="btn btn1" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Out</button>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+</page-container>

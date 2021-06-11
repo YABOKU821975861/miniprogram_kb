@@ -1,0 +1,13 @@
+<!-- 头部 -->
+<view class="header">
+  <view class="container hdContainer">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo" hover-start-time="1000">
+      <image class="hdlogo" src="/imgs/logo.jpg" mode="aspectFit"></image>
+      <text style="color: white; text-shadow: 2px 2px gray;">AnimationTalk</text>
+    </navigator>
+      <view class="hdright">
+        <button class="btn" open-tpye="contact"></button>
+        <image class="hdrightImg" src="/imgs/contact.jpg"/>
+      </view>
+  </view>
+</view>
